@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200&family=Roboto:wght@100&display=swap');
+
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+}
+
+/* Header */
+header {
+    background-color: #5905e0;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    text-shadow: 0px 0px 10px white;
+}
+
+.logo span {
+    color: red;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 25px;
+}
+
+/* nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover {
+    color: red;
+} */
+
+/* .barra {
+    float: right;
+}
+
+.barra li {
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.barra a:hover {
+    color: rgb(255, 0, 212);
+}
+
+.barra p {
+    font-size: 15px;
+    color: rgb(247, 83, 184);
+    font-weight: bold;
+} */
+
+.dropdown-menu {
+    background-color: #05e072;
+}
+
+/* Fin Header */
+
+
+/* Galeria */
+.t {
+    height: 100%;
+    text-align: center;
+    background-color: #000;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px rgb(10, 128, 30);
+    padding: 20px;
+}
+
+.galeria {
+    width: 100%;
+    height: auto;
+    background-color: #770909;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    padding: 20px;
+    /* grid-gap: 15px; */
+}
+
+.item {
+    border: 3px solid black;
+    background-size: cover;
+    background-position: center;
+    margin: .5em;
+    border-radius: .5em;
+}
+
+.item1 {
+    background-image: url(./fruta/apples-g154382888_1280.jpg);
+    /* grid-column: 1/2;
+    grid-row: 1/5; */
+}
+
+.item2 {
+    background-image: url(./fruta/berries-g094ce713e_1280.jpg);
+    /* grid-column: 2/3;
+    grid-row: 1/3; */
+}
+
+.item3 {
+    background-image: url(./fruta/berry-g1e92ba3db_1280.jpg);
+    /* grid-column: 3/5;
+    grid-row: 1/2; */
+}
+
+.item4 {
+    background-image: url(./fruta/carrots-gf0cdf4e61_1280.jpg);
+    /* grid-column: 3/5;
+    grid-row: 2/4; */
+}
+
+.item5 {
+    background-image: url(./fruta/grapefruits-g49691bba8_1280.jpg);
+    /* grid-column: 2/3;
+    grid-row: 3/5; */
+}
+
+.item6 {
+    background-image: url(./fruta/melon-gc6cfd194f_1280.jpg);
+    /* grid-column: 3/5;
+    grid-row: 4/5; */
+}
+
+.item:hover {
+    box-shadow: 0 0 5px 5px #5905e0;
+    transform: scale(1.09);
+    transition: all 1.1s;
+}
+
+@media only screen and (min-width:480px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .item2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .item4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .item5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .item6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+
+/* Fin De Galeria */
+
+
+/* footer */
+
+footer {
+    min-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(0, 0, 7);
+    color: rgb(71, 22, 134);
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.redes2 {
+    color: #e00510;
+    letter-spacing: 15px;
+    font-size: 30px;
+}
+
+.redes2 a:hover {
+    color: #e00510;
+}
+
+/* Fin Footer */
+
+
+/* Nosotros */
+.equipo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 650px;
+    background-color: violet
+}
+
+.card {
+    width: 20%;
+    min-height: 350px;
+    background-color: rgb(138, 214, 17);
+    text-align: center;
+    border-radius: 10px;
+    transition: all 1.1s;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px 5px #5905e0;
+    transform: scale(1.09);
+    transition: all 0.10s;
+}
+
+.card-img {
+    background-image: url(/fruta/man-ge49b2262c_1280.jpg);
+    background-size: cover;
+    height: 180px;
+}
+
+.card-img2 {
+    background-image: url(/fruta/statue-of-liberty-gb17d6c194_1280.jpg);
+    background-size: cover;
+    height: 180px;
+}
+
+.card-img3 {
+    background-image: url(/fruta/man-gad855a2aa_1280.jpg);
+    background-size: cover;
+    height: 180px;
+}
+
+.card-title3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.card-title4 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.card p {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.redes {
+    padding-bottom: 20px;
+}
+
+.redes a {
+    color: rgb(2, 23, 41);
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.redes a:hover {
+    color: rgb(226, 43, 202);
+}
+
+/* fin nosotros */
